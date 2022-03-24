@@ -1,17 +1,12 @@
 import React from 'react';
-import Card from './Card';
+import Container from './Container/Container';
+import Heading from'./Heading/Heading';
 function Appp()
 {
 return(
     <div id='container'>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        <Heading></Heading>
+        <Container></Container>
     </div>
     
 );
