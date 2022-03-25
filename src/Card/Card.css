@@ -1,23 +1,50 @@
-body{
-    background-color:#c0af56;
+body {
+    background-color: #c0af56;
 }
-#container
-{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 10px;
+
+
+
+.ID {
+    height: 360px;
+    width: 433px;
+    background-color: #d4cf3b;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 2px yellow;
+   
 }
-.ID
-{
-   height: 150px;
-   width: 150px;
-   background-color: #d4cf3b;
-   border-radius: 40px;
-   box-shadow: 2px 2px 2px 2px yellow;
+h1{
+    font-style: italic;
+    color:gold;
+    position: relative;
+    left:700px;
+   
 
 }
-.title,.text
+.data
 {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 30px;
+  
+}
+
+.title {
     padding: 10px;
     text-align: center;
+}
+
+.text {
+    position: relative;
+    left: 98px;
+    font-size: x-large;
+    top: 66px;
+}
+
+.img {
+    position: relative;
+    left: 135px;
+    top: 30px;
+    border-radius: 2px 40px 20px;
 }
