@@ -1,15 +1,19 @@
 import './Card.css'
+import React from 'react';
 import a3 from './a3.jpg'
 
 function Card(props) {
-    const { id, email, first_name, last_name,gender } = props;
+    const { id, email, first_name, last_name,avatar,sel,handleClickAction } = props;
+    const onClick =() => {
+        handleClickAction(id);
+    };
     return (
-        <div className="ID">
-            <img src={a3} className='img'></img>
-            <div className='card'>
+        <div className={`ID ${sel? "Sel":""}`}onClick={onClick}>
+            <img src={avatar} className='img'></img>
+            <div className="card">
 
                 
-                <span className="text">Id:{id}</span>
+                <span className="text">Id:{id ? id : ""}</span>
                 <br></br>
                 <span className="text">Email:{email}</span>
 
@@ -18,7 +22,7 @@ function Card(props) {
                 <br></br>
                 <span className="text">Last Name:{last_name}</span>
                 <br></br>
-                <span className='text'>Gender:{gender==='m'?"Male":"Female"}</span>
+                
 
 
             </div>
